@@ -1,0 +1,43 @@
+{
+    "manifest_version": 2,
+    "name": "My Pinterest",
+    "description": "Pinterest popup",
+    "version": "1.0.1",
+    "icons": { "128": "icon_128.png"},
+    "browser_action": {
+    "default_icon": "icon_128.png"
+    },
+    "background": {
+      "scripts": [
+        "jquery/jquery.min.js",
+        "jquery/jquery-ui.js",
+        "background.js"
+    ]
+    }, 
+    "content_scripts": [
+    {
+        "matches": ["https://www.pinterest.com/*"],
+        "js": [
+               "jquery/jquery.min.js",
+               "jquery/jquery-ui.js",
+                "popup.js"
+        ],
+        "css": ["popup.css"]                           
+    }
+    ],
+    "permissions": [
+                    "tabs",
+                    "storage",
+                    "fontSettings"
+    ],
+    "web_accessible_resources": [
+                                 "popup.js",
+                                 "popup.html",
+                                 "img/*.png",
+                                 "img/*.svg",
+                                 "img/*.mp4",
+                                 "font/*.ttf"
+    ]
+}
+
+

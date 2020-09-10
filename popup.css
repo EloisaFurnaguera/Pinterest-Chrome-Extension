@@ -1,0 +1,179 @@
+
+@font-face {
+    font-family:'Lato';
+    src: url('chrome-extension://__MSG_@@extension_id__/font/Lato-Thin.ttf');
+    font-weight: 100; 
+}
+@font-face {
+    font-family:'Lato';
+    src: url('chrome-extension://__MSG_@@extension_id__/font/Lato-Light.ttf');
+    font-weight: 300; 
+}
+@font-face {
+    font-family:'Lato';
+    src: url('chrome-extension://__MSG_@@extension_id__/font/Lato-Regular.ttf');
+    font-weight: 400; 
+}
+@font-face {
+    font-family:'Lato';
+    src: url('chrome-extension://__MSG_@@extension_id__/font/Lato-SemiBold.ttf');
+    font-weight: 600;
+}
+@font-face {
+    font-family:'Lato';
+    src: url('chrome-extension://__MSG_@@extension_id__/font/Lato-Bold.ttf');
+    font-weight: 700;
+}
+@font-face {
+    font-family:'Lato';
+    src: url('chrome-extension://__MSG_@@extension_id__/font/Lato-Black.ttf');
+    font-weight: 900;
+}
+#popup {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 100;
+}
+#popup_mypinterest_outer_wrap {
+    position: relative;
+    border-radius: 50%;
+    width: 46px;
+    height: 35px;
+}
+#popup_mypinterest_inner_wrap {
+    z-index: 97; 
+    position:relative;
+    border-radius: 50%;
+    width: 46px;
+    height: 35px;
+    transition: all .3s ease;
+    transform : scale(0.1);  
+}                                                 
+#popup_mypinterest {
+    z-index: 101; 
+    position: absolute;
+    background: url("chrome-extension://__MSG_@@extension_id__/img/pinterest-brands.svg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    text-align: Center;
+    cursor: pointer; 
+    width: 51px;
+    height: 51px;
+    left: 28%;
+    top: 53%;
+}
+#popup_mypinterest:hover {
+    cursor: move;
+}
+#popup_mypinterest_ring { 
+    position: absolute;
+    background-color: #e60023;
+    background-position: center;
+    background-size: cover;
+    z-index: 99;  
+    border-radius: 50%;
+    left: 13%;
+    top: 33%;
+    width: 65px;
+    height: 65px;
+}
+.popup_mypinterest_inner_wrap_circle {
+    position:absolute; 
+    width:50.5%; 
+    height:50.5%;
+    text-decoration: none;
+    transform-origin: 100% 100%;
+}
+.popup_mypinterest_inner_wrap_circle a {
+    position: absolute;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    font-family:'Lato';
+    font-weight: 700;
+    font-size: 13px !important;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+    top: 50%;
+    padding-top: 2.8em;
+}
+#popup_mypinterest_inner_wrap div:first-child {
+    background-color: #6a040f; 
+    border-radius: 50%;
+    width: 245px;
+    height: 245px;
+}
+#popup_mypinterest_inner_wrap div:nth-child(2) {
+    background-color: #9d0208; 
+    border-radius: 50%;
+    width: 212px;
+    height: 213px;
+    left: 8%;
+    top: 15%;
+}
+#popup_mypinterest_inner_wrap div:nth-child(3) {
+    background-color: #dc2f02; 
+    border-radius: 50%;
+    width: 179px;
+    height: 177px;
+    left: 13%;   
+    top: 27%;
+}
+#popup_mypinterest_inner_wrap div:nth-child(4) {
+    background-color: #f48c06; 
+    border-radius: 50%;
+    width: 144px;
+    height: 144px;
+    left: 21%;
+    top: 38%;
+}
+#popup_mypinterest_inner_wrap div:nth-child(5) {
+    background-color: #faa307; 
+    border-radius: 50%;
+    width: 116px;
+    height: 116px;
+    left: 28%;
+    top: 50%;
+} 
+#popup_mypinterest_inner_wrap div:nth-child(6) {
+    background-color: #ffba08; 
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    left: 32%;
+    top: 57%;
+}
+#popup_mypinterest_inner_wrap_circle_1 { 
+    transform:rotate(-9.5deg);
+    transform-origin: 421% -757%;
+}
+#popup_mypinterest_inner_wrap_circle_2 {
+    transform: rotate(-10.5deg);
+    transform-origin: 299% -590%;  
+}
+#popup_mypinterest_inner_wrap_circle_3 {
+    transform: rotate(-10.5deg);
+    transform-origin: 267% -482%;
+}
+#popup_mypinterest_inner_wrap_circle_4 {
+    transform: rotate(-11.5deg);
+    transform-origin: 99% -348%;
+}
+#popup_mypinterest_inner_wrap_circle_5 {
+    transform: rotate(-11.5deg);
+    transform-origin: -102% -256%;
+}
+#popup_mypinterest_inner_wrap_circle_6 {
+    transform: rotate(-11.5deg);
+    transform-origin: -371% -190%;
+}
+.popup_mypinterest_inner_wrap_circle:hover {
+    background-color: #fcbf49 !important;
+}
+.popup_mypinterest_inner_wrap_circle p:hover {
+    font-weight: 900;
+    color: #282828;
+}
